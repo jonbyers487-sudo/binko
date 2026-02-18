@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINKO | Premium Men's Fashion</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark-grey: #1a1a1a;
+            --light-grey: #f4f4f4;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #000;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            border-bottom: 1px solid #333;
+        }
+
+        nav {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #222;
+        }
+
+        nav a {
+            color: #bbb;
+            text-decoration: none;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .btn {
+            background: var(--gold);
+            color: black;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: transform 0.2s, background 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: #f1c40f;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 24px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--dark-grey);
+            overflow: hidden;
+            border-radius: 4px;
+            transition: 0.4s;
+            border: 1px solid #333;
+        }
+
+        .card:hover {
+            border-color: var(--gold);
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            filter: grayscale(30%);
+            transition: 0.5s;
+        }
+
+        .card:hover img {
+            filter: grayscale(0%);
+        }
+
+        .card-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            letter-spacing: 2px;
+        }
+
+        .card p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            background: #000;
+            border-top: 1px solid #222;
+            color: #555;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<header>BINKO</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Jackets</a>
+    <a href="#">Shirts</a>
+    <a href="#">Trousers</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Wear the Confidence</h1>
+    <p>Premium craftsmanship for the modern man.</p>
+    <a href="#" class="btn">Explore Collection</a>
+</div>
+
+<h2 class="section-title">The Essentials</h2>
+
+<div class="products">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&q=80" alt="Jacket">
+        <div class="card-info">
+            <h3>Jackets</h3>
+            <p>Refined outerwear for any season.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1624373666563-5475dba0bfab?auto=format&fit=crop&w=500&q=80" alt="Shirt">
+        <div class="card-info">
+            <h3>Shirts</h3>
+            <p>Tailored fits and premium cotton.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1624371414361-e6e8ea402526?auto=format&fit=crop&w=500&q=80" alt="Trousers">
+        <div class="card-info">
+            <h3>Trousers</h3>
+            <p>Comfort meets classic silhouette.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 BINKO. DEFINING MODERN ELEGANCE.
+</footer>
+
+</body>
+</html>
